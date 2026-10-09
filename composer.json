@@ -1,0 +1,51 @@
+{
+  "name": "outstand/post-terms",
+  "description": "Adds a setting to the Post Terms block that lists terms without links.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Sérgio Santos",
+      "homepage": "https://s3rgiosan.dev"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Outstand\\WP\\PostTerms\\": "includes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Outstand\\WP\\PostTerms\\Tests\\Unit\\": "tests/php/unit/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "composer-plugin-api": "^2.3",
+    "yahnis-elsts/plugin-update-checker": "^5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "pixelalbatross/coding-standards": "dev-main",
+    "yoast/phpunit-polyfills": "^1.1"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf .",
+    "test": "phpunit"
+  },
+  "extra": {
+    "installer-name": "outstand-post-terms"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.2"
+    }
+  }
+}

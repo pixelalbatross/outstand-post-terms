@@ -1,0 +1,41 @@
+{
+  "name": "outstand-post-terms",
+  "version": "1.0.0",
+  "description": "Adds a setting to the Post Terms block that lists terms without links.",
+  "contributors": [
+    {
+      "name": "Sérgio Santos",
+      "homepage": "https://s3rgiosan.dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelalbatross/outstand-post-terms"
+  },
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "packages-update": "wp-scripts packages-update",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js:fix": "wp-scripts lint-js --fix",
+    "lint:css": "wp-scripts lint-style",
+    "format": "wp-scripts format",
+    "wp-env": "wp-env",
+    "wp-env:clean": "wp-env clean all",
+    "test:setup": "npm run wp-env start",
+    "test:unit": "wp-env run tests-cli --env-cwd='wp-content/plugins/outstand-post-terms' vendor/bin/phpunit --testsuite=default",
+    "test:js": "wp-scripts test-unit-js"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.39.0",
+    "@wordpress/scripts": "^30.12.0"
+  },
+  "overrides": {
+    "typescript": "^5.9.0"
+  }
+}

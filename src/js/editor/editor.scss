@@ -1,0 +1,6 @@
+// The editor renders each term as a link; unlinked blocks show them as text.
+.wp-block-post-terms.outstand-post-terms-unlinked a {
+	color: inherit;
+	text-decoration: none;
+	pointer-events: none;
+}

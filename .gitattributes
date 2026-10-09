@@ -1,0 +1,23 @@
+# Directories
+/.git export-ignore
+/.github export-ignore
+/docs export-ignore
+/node_modules export-ignore
+/release export-ignore
+/src export-ignore
+/tests export-ignore
+
+# Files
+/.* export-ignore
+/CHANGELOG.md export-ignore
+/composer.json export-ignore
+/composer.lock export-ignore
+/package-lock.json export-ignore
+/package.json export-ignore
+/phpcs.xml.dist export-ignore
+/phpunit.xml.dist export-ignore
+/README.md export-ignore
+/webpack.config.js export-ignore
+
+build/** linguist-generated=true
+vendor/** linguist-vendored=true

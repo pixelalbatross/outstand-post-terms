@@ -1,0 +1,17 @@
+{
+  "core": "WordPress/WordPress#master",
+  "phpVersion": "8.2",
+  "port": 8995,
+  "testsPort": 8996,
+  "plugins": [
+    "."
+  ],
+  "mappings": {
+    "wp-content/plugins/outstand-post-terms": "."
+  },
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "SCRIPT_DEBUG": true
+  }
+}

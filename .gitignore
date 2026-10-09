@@ -1,0 +1,24 @@
+#---------------------------
+# Project
+#---------------------------
+.claude
+node_modules/
+.node_history
+package-lock.json
+**/package-lock.json
+.phpunit.result.cache
+
+#---------------------------
+# System
+#---------------------------
+*~
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+Desktop.ini
